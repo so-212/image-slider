@@ -1,0 +1,18 @@
+<section>
+
+  <form class="example-form">
+    <mat-form-field class="example-full-width task-title">
+      <mat-label>Task to do</mat-label>
+      <input #newItem #title matInput placeholder="Ex. some task" >
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width task-description">
+      <mat-label>Task description</mat-label>
+      <textarea #description matInput placeholder="Ex. It makes me feel..."></textarea>
+    </mat-form-field>
+
+    <button  mat-raised-button color="primary"  (click)="addNewTask(title, description)">Primary</button>
+
+</form>
+
+</section>

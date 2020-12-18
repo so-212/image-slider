@@ -1,0 +1,28 @@
+<h1 mat-dialog-title>Correction</h1>
+<div class="mat-dialog">
+  <div mat-dialog-content>
+
+    <p>Souhaitez-vous modifier cette tâche?</p>
+    <mat-form-field style="margin-right: 1em;">
+      <mat-label>new ttitle</mat-label>
+      <input matInput [(ngModel)]="data.newTask.title">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Task description</mat-label>
+      <input matInput [(ngModel)]="data.newTask.description">
+    </mat-form-field>
+
+  </div>
+
+
+  <div mat-dialog-actions>
+    <button style="margin-left: 3em; margin-right: 1.5em;" mat-raised-button (click)="onNoClick()">Annuler</button>
+    <button mat-raised-button [mat-dialog-close]="data.newTask" cdkFocusInitial>Modifier</button>
+  </div>
+  
+  
+  
+
+
+</div>

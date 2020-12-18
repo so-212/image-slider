@@ -1,0 +1,39 @@
+section {
+  width: 100%;
+  margin: auto;
+  padding: 2em;
+}
+
+
+
+.example-form {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+
+
+.example-full-width {
+  display: flex;
+  width: 100%;
+}
+
+.task-title {
+  margin-right: 3em;
+}
+
+.task-description {
+  margin-right: 3em;
+
+}
+
+button {
+  min-width: max-content;
+  line-height: 34px;
+  margin-top: 1.6em;
+  height: max-content;
+  width: inherit;
+}

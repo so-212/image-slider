@@ -1,0 +1,29 @@
+<h1>Slider de photos : </h1>
+
+ 
+
+ <mat-carousel
+ timings="250ms ease-in"
+ [autoplay]="true"
+ interval="5000"
+ color="accent"
+ maxWidth="800px"
+ maxHeight="533px"
+ proportion="70"
+ slides="5"
+ [loop]="true"
+ [hideArrows]="false"
+ [hideIndicators]="false"
+ [useKeyboard]="true"
+ [useMouseWheel]="false"
+ orientation="ltr"
+>
+ <mat-carousel-slide
+   #matCarouselSlide
+   *ngFor="let slide of slides; let i = index"
+   [image]="slide.image"
+  
+   [hideOverlay]="false"
+ ></mat-carousel-slide>
+</mat-carousel>
+   

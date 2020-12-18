@@ -1,0 +1,28 @@
+<mat-card>Simple card
+
+  <section>
+    <h2>{{task.title}}</h2>
+    <p>{{task.description}}</p>
+    <p *ngIf="taskCorrected">{{taskCorrected.title}}</p>
+  </section>
+
+
+
+  <section>
+
+    <button (click)="openDialog()" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    
+
+    <button (taskCorrected)="editTask($event)"
+     (click)="delete()" mat-mini-fab color="accent" aria-label="Example icon button with a delete icon">
+      <mat-icon>delete</mat-icon>
+    </button>
+
+    <p *ngIf="animal">{{animal}}</p>
+
+  </section>
+
+</mat-card>
